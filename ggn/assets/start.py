@@ -55,8 +55,8 @@ async def start(event):
     user_id = event.sender_id
     collection.update_one({"user_id": user_id}, {"$set": {"user_id": user_id}}, upsert=True)
     buttons = [
-        [Button.url("Join Channel", url="https://t.me/devgaganin")],
-        [Button.url("Contact Me", url="https://t.me/ggnhere")],
+        [Button.url("Join Channel", url="https://t.me/Sonickuwalupdate")],
+        [Button.url("Contact Me", url="http://t.me/KanhaContentbot")],
     ]
     await gagan.send_file(
         event.chat_id,
@@ -108,7 +108,7 @@ async def get_registered_users_command(event):
     os.remove(filename)  # Remove the temporary file after sending
 
 S = "/start"
-START_PIC = "https://graph.org/file/1dfb96bd8f00a7c05f164.gif"
+START_PIC = "https://graph.org/file/401bcfd8497b24ebbaff4-c63e7e01a957dcf0b3.jpg"
 TEXT = "Hey! I am Advance Content Saver Bot, do login in bot by /login and start saving from public/private channels/groups via sending post link.\n\n👉🏻 Execute /batch for bulk process upto 1K files range."
 
 
@@ -125,7 +125,7 @@ PRE_TEXT = """💰 **Premium Price**: Starting from $2 or 200 INR accepted via *
 async def plan_command(event):
     # Creating inline keyboard with buttons
     buttons = [
-        [Button.url("Send Gift Card Code", url="https://t.me/ttonehelpbot")]
+        [Button.url("Send Gift Card Code", url="http://t.me/KanhaContentbot")]
     ]
 
     # Sending photo with caption and buttons
@@ -148,8 +148,8 @@ TERM_TEXT = """📜 **Terms and Conditions** 📜\n
 async def term_command(event):
     # Creating inline keyboard with buttons
     buttons = [
-        [Button.url("Query?", url="https://t.me/ttonehelpbot"),
-         Button.url("Channel", url="https://telegram.dog/devgaganin")]
+        [Button.url("Query?", url="http://t.me/KanhaContentbot"),
+         Button.url("Channel", url="https://t.me/Sonickuwalupdate")]
     ]
 
     # Sending photo with caption and buttons
@@ -160,7 +160,7 @@ async def term_command(event):
         buttons=buttons
     )
 
-REPO_URL = "https://github.com/devgaganin/Save-Restricted-Content-Bot-Repo"
+REPO_URL = "https://t.me/Sonickuwalupdate"
 
 HELP_TEXT = """Here are the available commands:
 
@@ -247,7 +247,7 @@ async def youtube_dl_command(_, message):
 
             # Get video metadata
             metadata = video_metadata(original_file)
-            caption = f"{video_info['title']}\n\n__**Powered by [Advance Content Saver Bot](https://t.me/advance_content_saver_bot)**__"  # Set caption to the title of the video
+            caption = f"{video_info['title']}\n\n__**Powered by [Advance Content Saver Bot](http://t.me/KanhaContentbot)**__"  # Set caption to the title of the video
             
             # Send the video file and thumbnail
             ggn = message.chat.id
