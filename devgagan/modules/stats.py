@@ -30,6 +30,6 @@ async def stats(client, message):
 **Total Users** : {users}
 **Premium Users** : {len(premium)}
 
-**__Powered by Team SK_SINGH__**
+**__Powered by KANHAIYA LAL MEENA KUWAL__**
 """)
   
